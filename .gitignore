@@ -1,0 +1,35 @@
+# Entornos virtuales de Python (se recrean con pip install -r requirements)
+**/venv/
+__pycache__/
+*.pyc
+
+# Modelos de voz descargados (binarios grandes, se bajan con
+# piper.download_voices — ver voice/voice_loop.py)
+voice/models/
+
+# Logs y salidas de sesiones de trabajo
+*.log
+
+# Registro de jobs de OpenCode (estado runtime, no codigo fuente)
+bridge/jobs/registry.json
+
+# Archivos de prueba/benchmark generados durante el desarrollo
+bridge/*_final.json
+bridge/last_sid.txt
+bridge/mcp_sid.txt
+bridge/verify_ssd_sid.txt
+bridge/poll_test*.sh
+bridge/http_test*.log
+bridge/*openapi.json
+bridge/*providers.json
+bridge/hola.txt
+bridge/chau.txt
+ultimo_job.json
+
+# Capturas de pantalla con datos personales (chats de la cuenta de Claude
+# visibles en la barra lateral) - nunca deben subirse a un repo
+recursos/
+
+# Windows
+Thumbs.db
+desktop.ini
